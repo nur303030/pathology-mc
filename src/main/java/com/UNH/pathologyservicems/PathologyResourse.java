@@ -18,7 +18,8 @@ public class PathologyResourse {
 	List<Disease>disease=Arrays.asList(
 	new Disease("D1","cold","warm woter"),
 	new Disease("D2","heat","madicine"),
-	new Disease("D3","flu","sleep")
+	new Disease("D3","flu","sleep"),
+	new Disease("D4","bowl","drink green tea")
 	);
 
 
