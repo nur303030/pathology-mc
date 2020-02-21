@@ -2,21 +2,21 @@ version: 0.2
 phases:
   install:
     commads:
-      - echo echo Executing Install Phase
+      - "echo echo Executing Install Phase"
       finally:
-        - echo echo Executing Install Phase
+        - "echo echo Executing Install Phase"
       pre_build:
       commands:
-        - echo echo Executing pre Build Phase
+        - "echo echo Executing pre Build Phase"
       finally:
-        -  echo echo Executing pre Build Phase
+        -  "echo echo Executing pre Build Phase"
       build:
         commands:
-          - echo echo Executing Build Phase
+          - "echo echo Executing Build Phase"
           finally:
-            - echo echo Executing  Build Phase
+            - "echo echo Executing  Build Phase"
       post_build:
         commands:
-          - echo executing Post Build Phase
+          - "echo executing Post Build Phase"
           finally:
-            - echo echo Executing post Build Phase
+            - "echo echo Executing post Build Phase"
