@@ -1,22 +1,13 @@
 version: 0.2
 phases:
-  install:
-    commads:
-      - "echo echo Executing Install Phase"
-      finally:
-        - "echo echo Executing Install Phase"
-      pre_build:
-      commands:
-        - "echo echo Executing pre Build Phase"
-      finally:
-        -  "echo echo Executing pre Build Phase"
-      build:
-        commands:
-          - "echo echo Executing Build Phase"
-          finally:
-            - "echo echo Executing  Build Phase"
-      post_build:
-        commands:
-          - "echo executing Post Build Phase"
-          finally:
-            - "echo echo Executing post Build Phase"
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/pathology-service-ms-0.0.1-SNAPSHOT.jar
