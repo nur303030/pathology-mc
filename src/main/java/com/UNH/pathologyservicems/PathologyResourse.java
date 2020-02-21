@@ -19,7 +19,8 @@ public class PathologyResourse {
 	new Disease("D1","cold","warm woter"),
 	new Disease("D2","heat","madicine"),
 	new Disease("D3","flu","sleep"),
-	new Disease("D4","bowl","drink green tea")
+	new Disease("D4","bowl","drink green tea"),
+    new Disease("D5","stomach","drink water")
 	);
 
 
@@ -34,8 +35,8 @@ public class PathologyResourse {
 	//get single resource
 	@RequestMapping("/disease/{id}")
 	public Disease getDiseaseById(@PathVariable("id")String Id) {
-		Disease d=disease.stream().filter(disease -> Id.equals(disease.getId())).findAny().orElse(null);
-		return d;
+		Disease dc=disease.stream().filter(disease -> Id.equals(disease.getId())).findAny().orElse(null);
+		return dc;
 	}
 
 }
