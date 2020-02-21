@@ -1,0 +1,5 @@
+{
+  "name": "pathology-service-ms",
+  "imageUri": "740567414926.dkr.ecr.us-east-1.amazonaws.com/pathology:latest"
+
+}
