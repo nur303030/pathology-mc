@@ -1,5 +1,7 @@
-{
-  "name": "pathology",
-  "imageUri": "740567414926.dkr.ecr.us-east-1.amazonaws.com/pathology:latest"
+[
+  {
+    "name": "pathology",
+    "imageUri": "740567414926.dkr.ecr.us-east-1.amazonaws.com/pathology:latest"
+  }
+  ]
 
-}
