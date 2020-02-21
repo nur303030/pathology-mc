@@ -1,15 +1,22 @@
 version: 0.2
 phases:
-  pre_build:
-    commands:
-      - echo "Entered the pre-build phase"
-        build:
-         - echo "Entered build"
-         -  mvn clean package
-        post-build:
-          commands:
-            -echo "Entered the post-build phase"
-            - mv target/deploy ./
- artifacts:
-   files:
-     - deploy/**/*
+  install:
+    commads:
+      - echo echo Executing Install Phase
+      finally:
+        - echo echo Executing Install Phase
+      pre_build:
+      commands:
+        - echo echo Executing pre Build Phase
+      finally:
+        -  echo echo Executing pre Build Phase
+      build:
+        commands:
+          - echo echo Executing Build Phase
+          finally:
+            - echo echo Executing  Build Phase
+      post_build:
+        commands:
+          - echo executing Post Build Phase
+          finally:
+            - echo echo Executing post Build Phase
