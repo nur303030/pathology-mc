@@ -10,4 +10,4 @@ phases:
       - mvn package
 artifacts:
   files:
-    - /**/*
+    - target/pathology-service-ms-0.0.1-SNAPSHOT.war
