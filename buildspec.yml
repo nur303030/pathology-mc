@@ -10,4 +10,4 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/demo.war
+    - target/pathology-service-ms.war
