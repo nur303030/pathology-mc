@@ -19,8 +19,8 @@ public class PathologyResourse {
 	new Disease("D1","cold","warm woter"),
 	new Disease("D2","heat","madicine"),
 	new Disease("D3","flu","sleep"),
-	new Disease("D4","bowl","drink green tea"),
-    new Disease("D5","stomach","drink water")
+	new Disease("D4","bowl","drink green tea")
+
 	);
 
 
