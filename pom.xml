@@ -22,7 +22,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		
+
+			<start-class>com/UNH/pathologyservicems/PathologyServiceMsApplication.java</start-class>
+
 	</properties>
 
 	<dependencies>
