@@ -58,7 +58,7 @@
 
 
 	<build>
-		<finalName>demo</finalName>
+		<finalName>pathology-service-ms</finalName>
 		<plugins>
 
 			<plugin>
